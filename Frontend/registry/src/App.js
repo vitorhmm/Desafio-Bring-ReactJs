@@ -34,18 +34,7 @@ function App() {
     }
   }
 
-  function Vox(){
-    return(
-      <button>Botão</button>
-    );
-  }
-
-  var teste = "Mamou";
-
-
-  function ox(){
-    teste = "Legal"
-  }
+  
 
   const getGame = (id) => {
     Axios.get(`http://localhost:3001/get-info/${id}`).then((response) => {
@@ -98,3 +87,5 @@ function App() {
 }
 
 export default App;
+
+// simple
