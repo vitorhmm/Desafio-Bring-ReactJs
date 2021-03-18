@@ -49,7 +49,7 @@ function App() {
   return (
     <body class="body">
       <div class="header">
-      <form action="http://localhost:3000/">
+      <form action="https://tictactoe-bring.herokuapp.com/">
         <input type="submit" value="Game" id="nav" class="bt"/>
       </form>
       <h2>Tic Tac Toe Registry</h2>
