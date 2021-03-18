@@ -17,7 +17,7 @@ function sendGame(win, plays){
   const _win = win;
   const _plays = plays; 
 
-  Axios.post("http://localhost:3001/teste/vai", {
+  Axios.post("https://server-bring.herokuapp.com/teste/vai", {
       Winner: _win, 
       Plays: _plays,
     }).then(() => {
@@ -231,4 +231,4 @@ function sendGame(win, plays){
     return null;
   }
 
-  //this is a --test--
+  //this is a --test---

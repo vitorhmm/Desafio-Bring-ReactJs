@@ -8,12 +8,20 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
+// const db = mysql.createPool({
+//     host: "localhost",
+//     user: "root",
+//     password: "",
+//     database: "gamedb",
+//     //port: "3306",
+// });
+
 const db = mysql.createPool({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "gamedb",
-    //port: "3306",
+  host: "becdbn3ew4b3on9mogt2-mysql.services.clever-cloud.com",
+  user: "uvepn5xefjp3mi5c",
+  password: "NwkeoJC84AzByCa4M5Fv",
+  database: "becdbn3ew4b3on9mogt2",
+  port: "3306",
 });
 
 app.get("/", (req, res) => {
@@ -56,3 +64,5 @@ app.get("/get-info/:id", (req, res) => {
 app.listen(3001, () => {
     console.log("Running on Port 3001");
 });
+
+//test
