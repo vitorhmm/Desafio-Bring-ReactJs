@@ -42,20 +42,6 @@ CREATE TABLE `play` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `play`
---
-
-INSERT INTO `play` (`id`, `winner`, `p1`, `p2`, `p3`, `p4`, `p5`, `p6`, `p7`, `p8`, `p9`) VALUES
-(171, 'O', NULL, 'O', NULL, 'X', 'O', NULL, 'X', 'O', 'X'),
-(172, 'DRAW', 'X', 'O', 'X', 'X', 'X', 'O', 'O', 'X', 'O'),
-(173, 'X', 'O', 'X', 'O', 'X', 'X', 'O', 'O', 'X', 'X'),
-(174, 'X', 'X', NULL, 'O', 'O', 'X', NULL, 'X', 'O', 'X');
-
---
--- Índices para tabelas despejadas
---
-
---
 -- Índices para tabela `play`
 --
 ALTER TABLE `play`
