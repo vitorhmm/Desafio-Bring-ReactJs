@@ -37,7 +37,7 @@ function App() {
   
 
   const getGame = (id) => {
-    Axios.get(`http://localhost:3001/get-info/${id}`).then((response) => {
+    Axios.get(`https://server-bring.herokuapp.com/get-info/${id}`).then((response) => {
       setGame(response.data);
       
     });

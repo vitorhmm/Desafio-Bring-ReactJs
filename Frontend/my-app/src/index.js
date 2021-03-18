@@ -17,7 +17,7 @@ function sendGame(win, plays){
   const _win = win;
   const _plays = plays; 
 
-  Axios.post("https://server-bring.herokuapp.com/teste/vai", {
+  Axios.post("https://server-bring.herokuapp.com/save", {
       Winner: _win, 
       Plays: _plays,
     }).then(() => {

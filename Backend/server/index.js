@@ -25,10 +25,10 @@ const db = mysql.createPool({
 });
 
 app.get("/", (req, res) => {
-    res.send("ola");
+    res.send("server online");
 });
 
-app.post("/teste/vai", (req, res) => {
+app.post("/save", (req, res) => {
 
     const win = req.body.Winner
     const play = req.body.Plays
@@ -64,7 +64,3 @@ app.get("/get-info/:id", (req, res) => {
 app.listen(process.env.PORT || 3001);
 
 //test
-
-app.get("/", (req, res) => {
-  res.send("ola");
-});
