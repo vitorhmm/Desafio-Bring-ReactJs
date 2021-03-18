@@ -8,6 +8,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
+
+//-----------Local connection variable----------- BEGINNING
 // const db = mysql.createPool({
 //     host: "localhost",
 //     user: "root",
@@ -15,7 +17,12 @@ app.use(express.urlencoded({extended: true}));
 //     database: "gamedb",
 //     //port: "3306",
 // });
+//-----------Local connection variable----------- END
 
+
+
+
+//-----------Online connection variable----------- BEGINNING
 const db = mysql.createPool({
   host: "becdbn3ew4b3on9mogt2-mysql.services.clever-cloud.com",
   user: "uvepn5xefjp3mi5c",
@@ -23,6 +30,12 @@ const db = mysql.createPool({
   database: "becdbn3ew4b3on9mogt2",
   port: "3306",
 });
+
+/*
+ Online MySql server hosted by https://www.clever-cloud.com/en/
+ */
+
+//-----------Online connection variable----------- END
 
 app.get("/", (req, res) => {
     res.send("server online");
