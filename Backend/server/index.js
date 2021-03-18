@@ -61,12 +61,10 @@ app.get("/get-info/:id", (req, res) => {
     });
   });
 
-app.listen(3001, () => {
-    console.log("Running on Port 3001");
-});
+app.listen(process.env.PORT || 3001);
 
 //test
 
-app.get("/test", (req, res) => {
+app.get("/", (req, res) => {
   res.send("ola");
 });
