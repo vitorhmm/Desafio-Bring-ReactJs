@@ -66,3 +66,7 @@ app.listen(3001, () => {
 });
 
 //test
+
+app.get("/test", (req, res) => {
+  res.send("ola");
+});
